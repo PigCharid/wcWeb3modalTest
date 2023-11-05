@@ -22,7 +22,7 @@ const chains = [sepolia];
 const wagmiConfig = defaultWagmiConfig({ chains, projectId, metadata });
 
 // 3. Create modal
-createWeb3Modal({ wagmiConfig, projectId, chains });
+createWeb3Modal({ wagmiConfig, projectId, chains, defaultChain: sepolia });
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
